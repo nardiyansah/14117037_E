@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+
+    <!-- link css eksternal -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- css internal -->
+    <style>
+        * {
+            /* padding dan border dimasukkan dalam perhitungan ukuran */
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #d6bcba;
+            padding: 30px;
+        }
+
+        nav {
+            float: left;
+            padding: 20px;
+            background: #e1e851;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            background-color: #929478;
+        }
+
+        /* membersihkan column */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #4eafcf;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 style="float: left; margin-right: 10px;">Perjalanan ke luar angkasa</h2>
+        <img src="carl sagan.jpg" alt="space" width="200">
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Venus</a></li>
+                <li><a href="#">Mars</a></li>
+                <li><a href="#">Saturnus</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Mars</h1>
+            <p>Mars adalah planet terdekat keempat dari Matahari. Namanya diambil dari dewa perang Romawi, Mars. Planet
+                ini sering dijuluki sebagai "planet merah" karena tampak dari jauh berwarna kemerah-kemerahan. Ini
+                disebabkan oleh keberadaan besi(III) oksida di permukaan planet Mars. Mars adalah planet bebatuan dengan
+                atmosfer yang tipis. Di permukaan Mars terdapat kawah, gunung berapi, lembah, gurun, dan tudung es.
+                Periode rotasi dan siklus musim Mars mirip dengan Bumi. Di Mars berdiri Olympus Mons, gunung tertinggi
+                di Tata Surya, dan Valles Marineris, lembah terbesar di Tata Surya. Selain itu, di belahan utara
+                terdapat cekungan Borealis yang meliputi 40% permukaan Mars.
+            </p>
+            <h2>Pendaftaran Relawan Perjalanan ke Luar Angkasa</h2>
+            <form action="">
+                <div>
+                    <label for="nama">Nama</label>
+                    <input type="text" name="nama" id="nama">
+                </div>
+                <div>
+                    <label for="sex">Jenis Kelamin</label>
+                    <input type="radio" name="sex" value="Laki" id="sex"> Laki-laki
+                    <input type="radio" name="sex" value="Perempuan" id="sex"> Perempuan
+                </div>
+                <div>
+                    <label for="motivasi">Motivasi pergi ke luar angkasa</label>
+                    <textarea name="motivasi" id="motivasi" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p style="text-align: center;">14117037 Nardiyansah Tri Jatmiko</p>
+    </footer>
+</body>
+
+</html>

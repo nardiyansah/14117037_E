@@ -1,0 +1,21 @@
+html , body {
+    width: 784px;
+    
+}
+
+header {
+    width: 784px;
+    height: 200px;
+}
+
+section {
+    background-color: #e1e851;
+}
+
+nav {
+    width: 200px;
+}
+
+article {
+    width: 584px;
+}
